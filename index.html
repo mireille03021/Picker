@@ -57,20 +57,22 @@
                 max = parseInt($("#maxValue").val());
 
                 if (min != max && min != 0 && max > min) {
-                    $("#start").off('click');
+                    $("#minValue").attr('readonly', 'readonly');
+                    $("#maxValue").attr('readonly', 'readonly');
                     firstGame = false;
                     capacity = max - min + 1;
                     data = new Array(capacity);
                     setNumber();
                     runTime();
-                    $("#minValue").attr('readonly', 'readonly');
-                    $("#maxValue").attr('readonly', 'readonly');
+                } else {
+                    $("#start").on('click', start);
                 }
             }
 
             $("#start").on('click', start);
 
             function start() {
+                $("#start").off('click');
                 if (firstGame) {
                     init();
                 } else {
