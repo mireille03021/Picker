@@ -17,46 +17,4 @@
   left: 150px;
   line-height: 150px;
 }
-
-@-webkit-keyframes run {
-  0% {
-    left: 200px;
-  }
-  95% {
-    left: -200px;
-  }
-  100% {
-    left: -200px;
-  }
-}
-
-@keyframes run {
-  0% {
-    left: 200px;
-  }
-  95% {
-    left: -200px;
-  }
-  100% {
-    left: -200px;
-  }
-}
-
-@-webkit-keyframes timeOut {
-  from {
-    left: 150px;
-  }
-  to {
-    left: 0px;
-  }
-}
-
-@keyframes timeOut {
-  from {
-    left: 150px;
-  }
-  to {
-    left: 0px;
-  }
-}
 /*# sourceMappingURL=stylesheet.css.map */
